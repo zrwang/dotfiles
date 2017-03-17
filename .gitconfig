@@ -76,6 +76,18 @@
 		fi \
 	}; f"
 
+	# Commit
+	ci = commit
+
+	# Checkout
+	co = checkout
+
+	# Branch
+	br = branch
+
+	# Status
+	st = status
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
