@@ -81,6 +81,14 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ./brew.sh
 ```
 
+## Misc
+Use Caps as Ctrl:
+```bash
+sudo apt-get install dconf-tools
+man xkeyboard-config
+dconf write /org/gnome/desktop/input-sources/xkb-options "['ctrl:nocaps']"
+```
+
 ## Feedback
 
 Suggestions/improvements
