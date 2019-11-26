@@ -65,20 +65,18 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-### Sensible macOS defaults
+### Git Bash Completion
 
-When setting up a new Mac, you may want to set some sensible macOS defaults:
-
+For MacOS
 ```bash
-./.macos
+sudo find / -type f -name "git-completion.bash" # /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+sudo cp /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash /usr/local/etc/bash_completion.d/git-completion.bash
+echo 'source /usr/local/etc/bash_completion.d/git-completion.bash' >> ~/.extra
 ```
 
-### Install Homebrew formulae
-
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
-
+For Ubuntu
 ```bash
-./brew.sh
+sudo apt-get install git bash-completion
 ```
 
 ## Feedback
